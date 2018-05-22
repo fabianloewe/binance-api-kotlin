@@ -9,11 +9,13 @@ buildscript {
 }
 plugins {
     id "java-library"
+    id "maven"
     id "org.jetbrains.kotlin.jvm" version "1.2.41"
 }
 apply plugin: 'kotlin'
 
 version = "0.1.0"
+group = "com.binance.api.kotlin"
 
 defaultTasks "run"
 

@@ -1,4 +1,4 @@
-package de.hyronx.binance
+package com.binance.api.kotlin
 
 import com.binance.api.client.BinanceApiAsyncRestClient
 import com.binance.api.client.BinanceApiCallback

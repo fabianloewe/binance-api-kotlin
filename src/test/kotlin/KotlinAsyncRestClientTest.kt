@@ -1,4 +1,4 @@
-package de.hyronx.binance
+package com.binance.api.kotlin
 
 import com.binance.api.client.BinanceApiClientFactory
 import com.binance.api.client.domain.market.OrderBookEntry
@@ -62,8 +62,8 @@ class KotlinAsyncRestClientTest : StringSpec() {
             props.load(Files.newBufferedReader(Paths.get("src/test/resources/test.properties")))
 
             factory = BinanceApiClientFactory.newInstance(
-                    props.get("binance.apiKey") as? String,
-                    props.get("binance.apiSecret") as? String)
+                    props["binance.apiKey"] as? String,
+                    props["binance.apiSecret"] as? String)
         }
     }
 }
